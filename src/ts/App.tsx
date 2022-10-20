@@ -1,6 +1,18 @@
 import React, { useEffect } from 'react';
 
-import chimeSound from '../audio/start-chaim.mp3';
+import chimeSound from '../audio/Chime-Announce02-1.mp3';
+
+const Copyright = () => {
+    console.log('Sound material used');
+    return (
+        <div>
+            <hr />
+            <blockquote style={{color: 'gray', fontSize: 'small'}}>
+            Sound material used from 'OtoLogic(https://otologic.jp)'': 
+            </blockquote>
+        </div>
+    );
+}
 
 export const App = () => {
     const btn1Ref = React.useRef<HTMLInputElement>(null);
@@ -79,6 +91,7 @@ export const App = () => {
                 <label htmlFor='btn2'>Sound2 (use Web Audio API)</label>
                 <input ref={btn2Ref} type='button' id='btn2' value='play' onClick={audioPlay2} onChange={handleOnChange}/>
             </form>
+            <Copyright />
         </div>
     );
 }
