@@ -13,7 +13,7 @@ fn dbg_print(str: String) {
 
 #[tauri::command]
 fn audio_play(data: Vec<u8>) -> Result<(), String> {
-  println!("get cmd!!! {:?}", data);
+  // println!("get cmd!!! {:?}", data);
   // for n in 0..100 {
   //   println!("{}", data[n]);
   // }

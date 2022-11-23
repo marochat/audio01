@@ -146,7 +146,7 @@ export const App = () => {
             <form>
                 <label htmlFor='btn4'>Sound4</label>
                 <input type='button' id='btn4' value={btnLbl4} onClick={audioPlay4} onChange={handleOnChange}/>
-                <label> -- Use Tauri Native Audio (rodio) -- not work...</label>
+                <label> -- Use Tauri Native Audio (Rodio) -- not work...</label>
             </form>
             <Copyright />
         </div>
